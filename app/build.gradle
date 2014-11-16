@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.1"
 
     defaultConfig {
-        applicationId "co.infinum.workshop_2"
+        applicationId "com.ivankocijan.workshop_2"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
