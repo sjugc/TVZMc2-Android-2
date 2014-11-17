@@ -59,7 +59,7 @@ public class RecycleViewExample extends ActionBarActivity {
                 int newItemNumber = list.size();
 
                 list.add(new POJO(String.valueOf(newItemNumber)));
-                adapter.notifyDataSetChanged();
+                adapter.notifyItemInserted(list.size());
 
             }
         });
@@ -70,8 +70,9 @@ public class RecycleViewExample extends ActionBarActivity {
 
                 if (list.size() != 0) {
 
-                    list.remove(list.size() - 1);
-                    adapter.notifyDataSetChanged();
+                    int removedPosition = list.size() - 1;
+                    list.remove(removedPosition);
+                    adapter.notifyItemRemoved(removedPosition);
 
                 }
 

@@ -1,10 +1,12 @@
 package com.ivankocijan.workshop_2.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.ivankocijan.workshop_2.R;
 import com.ivankocijan.workshop_2.adapter.ListAdapter;
@@ -12,7 +14,7 @@ import com.ivankocijan.workshop_2.model.POJO;
 
 import java.util.ArrayList;
 
-public class ListViewEgActivity extends Activity {
+public class ListViewEgActivity extends ActionBarActivity {
 
     private ListView simpleListView;
     private ArrayList<POJO> pojoArrayList;
@@ -64,6 +66,13 @@ public class ListViewEgActivity extends Activity {
                 }
 
 
+            }
+        });
+
+        simpleListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(ListViewEgActivity.this, "Item clicked: " + position, Toast.LENGTH_SHORT).show();
             }
         });
 
