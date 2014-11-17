@@ -1,6 +1,9 @@
 # TVZ Mobile Challenge Cup workshop #2
 
-* ToDO
+* ScrollView
+* ListView
+* RecyclerView
+* CardView
 
 # LICENSE
 
