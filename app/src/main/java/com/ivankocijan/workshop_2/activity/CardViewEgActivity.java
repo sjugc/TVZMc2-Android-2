@@ -55,6 +55,7 @@ public class CardViewEgActivity extends ActionBarActivity implements CarAdapter.
         list.add(new Car("Lamborghini", R.drawable.lamborghini));
         list.add(new Car("Porsche", R.drawable.porsche));
         list.add(new Car("Mustang", R.drawable.mustang));
+        list.add(new Car("Peglica", R.drawable.peglica));
         list.add(new Car("Nissan", R.drawable.nissan));
         list.add(new Car("Dodge", R.drawable.dodge_viper_srt));
 
